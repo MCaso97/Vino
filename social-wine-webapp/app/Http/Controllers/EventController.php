@@ -46,7 +46,7 @@ class EventController extends Controller
             'regione',
             'via',
             'image_path',
-            'seller_id',
+            'supplier_id',
         ]);
 
         Event::create($request -> all());
@@ -98,7 +98,7 @@ class EventController extends Controller
             'regione',
             'via',
             'image_path',
-            'seller_id',
+            'supplier_id',
         ]);
 
         $event = Event::findOrFail($event);

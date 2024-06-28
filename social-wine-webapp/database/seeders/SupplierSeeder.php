@@ -14,8 +14,8 @@ class SupplierSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('sellers')->delete();
-        DB::table('sellers')->insert([
+        DB::table('suppliers')->delete();
+        DB::table('suppliers')->insert([
 
             [
                 'id' => '05321000100',

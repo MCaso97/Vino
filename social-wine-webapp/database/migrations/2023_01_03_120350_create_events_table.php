@@ -23,11 +23,11 @@ return new class extends Migration
             $table->string('citta');
             $table->string('regione');
             $table->string('via');
-            $table->string('seller_id')->nullable();  
+            $table->string('supplier_id')->nullable();  
             //$table->string('idc')->nullable();   
             $table->timestamps();
 
-            $table->foreign('seller_id')
+            $table->foreign('supplier_id')
                 ->references('id')
                 ->on('suppliers');
                 //->onDelete('cascade');

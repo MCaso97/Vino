@@ -11,7 +11,7 @@ class Role extends Model
 
    
     protected $fillable = [
-        "seller_id",
+        "supplier_id",
         "role"
     ];
     

@@ -27,3 +27,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/events/home', [App\Http\Controllers\EventController::class, 'index']);
 
 Route::get('/events/create', [App\Http\Controllers\EventController::class, 'create']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

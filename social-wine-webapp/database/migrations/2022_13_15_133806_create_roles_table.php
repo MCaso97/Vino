@@ -17,13 +17,13 @@ return new class extends Migration
             $table->bigInteger("signed")->unsigned();
             $table->enum("role", [
                 "wine_cellar",
-                "seller",
+                "supplier",
                 "restaurant",
             ]);
 
             $table->primary(["signed", "role"]);
 
-            $table->foreign("signed")->references("id")->on("sellers");   
+            $table->foreign("signed")->references("id")->on("suppliers");   
         
         });
     }

@@ -41,7 +41,7 @@
                         <ul><a href="{{ url('/home') }}" class="nav-link {{ request()->is('home') ? 'active disabled' : '' }}">Home</a></ul>
                         <ul><a href="{{ url('/events') }}" class="nav-link {{ request()->is('events') ? 'active disabled' : '' }}">Events</a></ul>
                         <ul><a href="{{ url('/wines') }}" class="nav-link {{ request()->is('wines') ? 'active disabled' : '' }}">Wines</a></ul>
-                        @if (Auth::user()->isWinery() || Auth::user()->isSeller())
+                        @if (Auth::user()->isWinery() || Auth::user()->isSupplier())
                             <ul><a href="{{ url('/events/create') }}" class="primary_button">New event</a></ul>
                         @endif
                         @if (Auth::user()->isWinery())

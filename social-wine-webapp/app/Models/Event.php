@@ -20,12 +20,12 @@ class Event extends Model
         'regione',
         'via',
         'image_path',
-        'seller_id',
+        'supplier_id',
     ];
 
     protected $casts = [
         'date' => 'datetime',
         'price' => 'float',
-        'seller_id' => 'integer'
+        'supplier_id' => 'integer'
     ];
 }

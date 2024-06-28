@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const surnameField = document.getElementById('surname_field');
     const vatField = document.getElementById('vat_field');
     const addressField = document.getElementById('address_field');
-    const isAlsoSellerField = document.getElementById('is_also_seller_field');
+    const isAlsoSupplierField = document.getElementById('is_also_supplier_field');
     const isAlsoWineryField = document.getElementById('is_also_winery_field');
   
     accountType.addEventListener('change', function () {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       surnameField.style.display = 'none';
       vatField.style.display = 'none';
       addressField.style.display = 'none';
-      isAlsoSellerField.style.display = 'none';
+      isAlsoSupplierField.style.display = 'none';
       isAlsoWineryField.style.display = 'none';
   
       if (selectedValue === 'user') {
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
       } else if (selectedValue === 'winery') {
         vatField.style.display = 'block';
         addressField.style.display = 'block';
-        isAlsoSellerField.style.display = 'block';
-      } else if (selectedValue === 'seller') {
+        isAlsoSupplierField.style.display = 'block';
+      } else if (selectedValue === 'supplier') {
         vatField.style.display = 'block';
         addressField.style.display = 'block';
         isAlsoWineryField.style.display = 'block';

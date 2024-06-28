@@ -27,7 +27,7 @@ class EventSeeder extends Seeder
                 'price' => '10',
                 'location' => 'Ferrara, via G. Adelardi 7, I Due Gobbi',
                 'image_path' => 'Event/inaugurazione.png',
-                'seller_id' => '05321000622'
+                'supplier_id' => '05321000622'
             ] ,  
             [
                 'id' => 'EV000100002',
@@ -38,7 +38,7 @@ class EventSeeder extends Seeder
                 'price' => '17',
                 'location' => 'Ferrara, via G. Adelardi 9, The LAB',
                 'image_path' => 'Event/inaugurazione02.png',
-                'seller_id' => '05321000622'
+                'supplier_id' => '05321000622'
             ],  
             [
                 'id' => 'EV000100003',
@@ -49,7 +49,7 @@ class EventSeeder extends Seeder
                 'price' => '15',
                 'location' => 'Ferrara, via San Romano 99, Olivia in Rosa',
                 'image_path' => 'Event/simone02.png',
-                'seller_id' => '05321000100'
+                'supplier_id' => '05321000100'
             ],  
             [
                 'id' => 'EV000100004',
@@ -60,7 +60,7 @@ class EventSeeder extends Seeder
                 'price' => '30',
                 'location' => 'Ferrara, via Saraceno 85, Antica Maremma',
                 'image_path' => 'Event/maremma01.png',
-                'seller_id' => '38922554653'
+                'supplier_id' => '38922554653'
             ],  
             [
                 'id' => 'EV000100005',
@@ -71,7 +71,7 @@ class EventSeeder extends Seeder
                 'price' => '30',
                 'location' => 'Ferrara, via Saraceno 85, Antica Maremma',
                 'image_path' => 'Event/maremma01.png',
-                'seller_id' => '38922554653'
+                'supplier_id' => '38922554653'
             ],  
             [
                 'id' => 'EV000100006',
@@ -82,7 +82,7 @@ class EventSeeder extends Seeder
                 'price' => '30',
                 'location' => 'Runco, via Quartiere 94/F, La Chiocciola',
                 'image_path' => 'Event/caso01.png',
-                'seller_id' => '05321000100'
+                'supplier_id' => '05321000100'
             ]
             ]);    }
 }

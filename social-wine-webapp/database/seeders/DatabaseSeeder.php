@@ -33,16 +33,16 @@ class DatabaseSeeder extends Seeder
             'address' => 'address'
         ]);
         User::factory()->create([
-            'name' => 'seller',
+            'name' => 'supplier',
             'email' => 'sellet@example.com',
-            'password' => bcrypt('pwd-seller'),
+            'password' => bcrypt('pwd-supplier'),
             'vat' => 'vatvatvat',
             'address' => 'address'
         ]);
         User::factory()->create([
-            'name' => 'winery-seller',
-            'email' => 'winery-seller@example.com',
-            'password' => bcrypt('pwd-winery-seller'),
+            'name' => 'winery-supplier',
+            'email' => 'winery-supplier@example.com',
+            'password' => bcrypt('pwd-winery-supplier'),
             'vat' => 'vatvatvat',
             'address' => 'address'
         ]);
@@ -55,8 +55,8 @@ class DatabaseSeeder extends Seeder
 
         $admin = User::where('name', 'admin')->first();
         $winery = User::where('name', 'winery')->first();
-        $seller = User::where('name', 'seller')->first();
-        $winery_seller = User::where('name', 'winery-seller')->first();
+        $supplier = User::where('name', 'supplier')->first();
+        $winery_supplier = User::where('name', 'winery-supplier')->first();
         $user = User::where('name', 'name')->first();
 
         DB::table('roles')->insert([
@@ -68,16 +68,16 @@ class DatabaseSeeder extends Seeder
             'role' => 'winery'
         ]);
         DB::table('roles')->insert([
-            'user_id' => $seller->id,
-            'role' => 'seller'
+            'user_id' => $supplier->id,
+            'role' => 'supplier'
         ]);
         DB::table('roles')->insert([
-            'user_id' => $winery_seller->id,
+            'user_id' => $winery_supplier->id,
             'role' => 'winery'
         ]);
         DB::table('roles')->insert([
-            'user_id' => $winery_seller->id,
-            'role' => 'seller'
+            'user_id' => $winery_supplier->id,
+            'role' => 'supplier'
         ]);
         DB::table('roles')->insert([
             'user_id' => $user->id,

@@ -43,8 +43,8 @@ class Supplier extends Model
     public function isWinery() {
         return $this->caso_key()->where("role", "winery")->exists();
     }
-    public function isSeller() {
-        return $this->caso_key()->where("role", "seller")->exists();
+    public function isSupplier() {
+        return $this->caso_key()->where("role", "supplier")->exists();
     }
     public function isGuide() {
         return $this->caso_key()->where("role", "local_guide")->exists();

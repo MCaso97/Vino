@@ -61,8 +61,8 @@ class User extends Authenticatable
     public function isWinery() {
         return $this->roles()->where("role", "winery")->exists();
     }
-    public function isSeller() {
-        return $this->roles()->where("role", "seller")->exists();
+    public function issupplier() {
+        return $this->roles()->where("role", "supplier")->exists();
     }
     public function isUser() {
         return $this->roles()->where("role", "user")->exists();
